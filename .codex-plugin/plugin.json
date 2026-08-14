@@ -1,0 +1,18 @@
+{
+  "name": "dsh-sound-effects",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 音效插件：把回合完成、审批和提问事件映射为系统音效。",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DSH 音效",
+    "shortDescription": "为 DeepSeek Harness 提供可配置的事件音效。",
+    "longDescription": "把回合完成、审批请求和问题请求通知映射为 Windows、macOS 或 Linux 系统音效。",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Dsh Sound Effects."
+  }
+}

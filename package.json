@@ -1,0 +1,24 @@
+{
+  "name": "@jasonjin06/dsh-sound-effects",
+  "version": "0.1.0",
+  "description": "Configurable event sounds for DeepSeek Harness",
+  "type": "module",
+  "files": ["dsh", "cordis.patch.yml", ".codex-plugin", "package.json"],
+  "exports": {
+    ".": "./dsh/index.js",
+    "./dsh": "./dsh/index.js",
+    "./client": "./dsh/client.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-settings": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-ui-settings", "@deepseek-ai/dsh-client-ui-primitives"],
+      "platform": "web"
+    }
+  }
+}
